@@ -1,0 +1,159 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p, ul {
+    text-align: left; /* Texto alineado a la izquierda */
+    font-size: 1.1rem;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+/* Navbar (Cabecera) */
+.navbar {
+    background-color: #1e3a8a; /* Azul profundo para llamar la atención */
+    color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo a {
+    color: #ffdd57; /* Amarillo brillante para destacar el logo */
+    font-size: 28px; /* Aumenta el tamaño del logo */
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-left: 25px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #ffdd57; /* Cambia a amarillo al pasar el cursor */
+}
+
+/* Section Showcase with Background */
+.showcase {
+    background: url('../images/showcase-bg.png') no-repeat center center/cover; /* Imagen de fondo */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.showcase h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7); /* Añadir sombra al texto */
+}
+
+.showcase p {
+    font-size: 1.7rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Section About */
+#about {
+    padding: 30px 0;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-box {
+    flex: 1;
+    padding: 20px;
+}
+
+.pr-1 {
+    padding-right: 20px;
+}
+
+.service-list, .service-benefits {
+    margin-top: 15px;
+}
+
+.service-list li, .service-benefits li {
+    margin-bottom: 8px;
+}
+
+/* Responsive Image */
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer */
+#mainfooter {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-icon {
+    width: 30px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    .flex-box {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p, ul {
+        font-size: 1rem;
+    }
+}
