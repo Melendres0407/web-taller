@@ -1,3 +1,51 @@
+/* Estilos base para la barra de navegación */
+.nav-links {
+    display: flex;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Oculta el menú en móviles */
+        flex-direction: column;
+        background-color: #1e3a8a; /* Mismo color que la barra de navegación */
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links li a {
+        color: #fff;
+        font-size: 18px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .menu-toggle {
+        display: block; /* Muestra el botón hamburguesa */
+        background: none;
+        border: none;
+        color: #ffdd57; /* Color amarillo */
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    .menu-toggle.active + .nav-links {
+        display: flex; /* Muestra el menú desplegable cuando está activo */
+    }
+}
+
 /* Utility Classes */
 .display-1 {
 	font-size: 2.5rem;
